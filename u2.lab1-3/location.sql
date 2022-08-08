@@ -1,14 +1,14 @@
---alter session set current_schema = SA_LOCATION;
---alter user SA_LOCATION quota unlimited on ts_sa_dim_location_01;
---drop table pizza_sales;
+alter session set current_schema = SA_LOCATION;
+alter user SA_LOCATION quota unlimited on ts_sa_dim_location_01;
+drop table t_sa_location;
 --
 --
-/*CREATE TABLE t_sa_location (
-   house_id         NUMBER
+CREATE TABLE t_sa_location (
+   location_id         NUMBER
     , house number
    ,street varchar(20)
     , city varchar(20)
-); */
+); 
 --drop table t_sa_location;
 --
 INSERT INTO t_sa_location
