@@ -91,7 +91,7 @@ INSERT INTO T_SA_PIZZA
                 FROM
                     dual
                 CONNECT BY
-                    level <= 300000
+                    level <= 15
             ) a
     )
     SELECT
