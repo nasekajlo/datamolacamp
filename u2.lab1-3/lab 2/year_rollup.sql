@@ -1,0 +1,7 @@
+alter session set current_schema = SA_TRANSACTIONS;
+
+SELECT  EXTRACT(year  FROM CUSTOMER_SALE_DATE) as year,GROUPING(EXTRACT(year FROM CUSTOMER_SALE_DATE)) as grouping_year, COUNT(*) AS pizza_order
+FROM sa_transactions
+GROUP BY rollup(EXTRACT(year FROM CUSTOMER_SALE_DATE))
+HAVING EXTRACT(year FROM CUSTOMER_SALE_DATE) IS NOT NULL 
+order by EXTRACT(year FROM CUSTOMER_SALE_DATE);
