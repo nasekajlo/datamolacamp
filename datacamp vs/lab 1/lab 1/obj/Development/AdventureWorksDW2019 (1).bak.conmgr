@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="AdventureWorksDW2019 (1).bak"
+  DTS:DTSID="{2473DC63-2FFD-44F3-90AA-D74D1CD034AB}"
+  DTS:CreationName="FILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="C:\AdventureWorksDW2019 (1).bak" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
